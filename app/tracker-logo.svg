@@ -1,0 +1,23 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main circular virus body -->
+  <circle cx="50" cy="50" r="30" fill="#2563eb" opacity="0.9"/>
+  
+  <!-- Virus spikes -->
+  <path d="M50 10 L50 25" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+  <path d="M50 75 L50 90" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+  <path d="M10 50 L25 50" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+  <path d="M75 50 L90 50" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Diagonal spikes -->
+  <path d="M22 22 L32 32" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+  <path d="M68 68 L78 78" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+  <path d="M22 78 L32 68" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+  <path d="M68 32 L78 22" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Trend line -->
+  <path d="M35 55 Q45 35, 55 45 T75 35" 
+        fill="none" 
+        stroke="white" 
+        stroke-width="3"
+        stroke-linecap="round"/>
+</svg>
