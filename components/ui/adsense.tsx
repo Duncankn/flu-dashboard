@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { getCookie } from 'cookies-next';
+//import { getCookie } from 'cookies-next';
 
 interface AdSenseProps {
   client: string;
@@ -10,8 +10,9 @@ export function AdSense({ client, slot }: AdSenseProps) {
   const adRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const consent = getCookie('adsense_consent');
-    if (consent === 'true' && adRef.current) {
+   //const consent = getCookie('adsense_consent');
+   //if (consent === 'true' && adRef.current)
+    if (adRef.current) {
       try {
         (window.adsbygoogle = window.adsbygoogle || []).push({});
       } catch (err) {
@@ -20,9 +21,9 @@ export function AdSense({ client, slot }: AdSenseProps) {
     }
   }, []);
 
-  if (getCookie('adsense_consent') !== 'true') {
+  /* if (getCookie('adsense_consent') !== 'true') {
     return null;
-  }
+  } */
 
   return (
     <div ref={adRef}>
