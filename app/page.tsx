@@ -50,7 +50,10 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-50 p-4">
-
+      {/* Ad */}
+      <div>
+        <AdSense client="ca-pub-8470057760537876" slot="3111011978" />
+      </div>
       {/* Title */}
       <div className="mb-6 text-center">
         <h1 className="text-3xl font-bold text-gray-800">香港流感監測儀表板</h1>
@@ -65,10 +68,6 @@ export default function Home() {
           目前流感活躍程度：{latestData ? getAlertLevel(latestData.ILI_GOPC) : '載入中'} - 請注意個人衛生，保持社交距離
         </AlertDescription>
       </Alert>
-      {/* Ad */}
-      <div>
-        <AdSense client="ca-pub-8470057760537876" slot="3111011978" />
-      </div>
 
       {/* Statistic cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
