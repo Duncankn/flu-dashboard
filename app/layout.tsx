@@ -15,11 +15,37 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hong Kong Flu Express | ILI Surveillance Dashboard",
-  description: "Real-time monitoring dashboard for influenza-like illness (ILI) surveillance in Hong Kong, tracking cases across clinics, schools, and community settings.",
-  icons: {
-    icon: '/tracker-logo.svg',
-  }
+  title: "香港流感監測儀表板 | 即時流感活躍度指標",
+  description: "即時監測香港流感活躍情況，提供最新流感指標、統計數據和趨勢分析",
+  keywords: ['香港', '流感', '監測', '儀表板', '健康', '統計'],
+  authors: [{ name: 'Duncan Kwan' }],
+  creator: 'Duncan Kwan',
+  openGraph: {
+    title: '香港流感監測儀表板',
+    description: '即時監測香港流感活躍情況，提供最新流感指標、統計數據和趨勢分析。',
+    url: 'https://flu-dashboard.vercel.app',
+    siteName: '香港流感監測儀表板',
+    images: [
+      {
+        url: 'https://flu-dashboard.vercel.app/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: '香港流感監測儀表板預覽圖',
+      },
+    ],
+    locale: 'zh_HK',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '香港流感監測儀表板',
+    description: '即時監測香港流感活躍情況，提供最新流感指標、統計數據和趨勢分析。',
+    images: ['https://flu-dashboard.vercel.app/twitter-image.jpg'],
+  },
+  metadataBase: new URL('https://flu-dashboard.vercel.app'),
+  other: {
+    'google-adsense-account': 'ca-pub-8470057760537876',
+  },
 };
 
 export default function RootLayout({
@@ -28,7 +54,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="zh-HK">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
