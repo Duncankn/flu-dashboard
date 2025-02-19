@@ -111,15 +111,19 @@ export function CasesChart({ data }: CasesChartProps) {
                   <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
                   <XAxis 
                     dataKey="From" 
-                    tickFormatter={formatDate}
-                    stroke="#888888"
+                    tickFormatter={formatDate} 
+                    stroke="#888888" 
+                    interval={0}
+                    angle={-45}
+                    textAnchor="end"
+                    height={50}
                   />
                   <YAxis 
                     stroke="#888888"
                     tickFormatter={(value) => `${value}`}
                   />
                   <Tooltip 
-                    labelFormatter={(value) => formatDate(value)}
+                    labelFormatter={formatDate}
                     formatter={formatTooltipValue}
                     contentStyle={{
                       backgroundColor: 'white',
@@ -127,6 +131,8 @@ export function CasesChart({ data }: CasesChartProps) {
                       borderRadius: '6px',
                       padding: '8px'
                     }}
+                    itemStyle={{ color: '#000' }}
+                    labelStyle={{ color: '#000' }}
                   />
                   <Legend 
                     verticalAlign="top" 
