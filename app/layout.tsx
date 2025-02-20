@@ -16,6 +16,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "香港流感監測儀表板 | 即時流感活躍度指標",
+  metadataBase: new URL('https://flu-dashboard.vercel.app'),
+  alternates: {
+    canonical: '/',
+  },
   description: "即時監測香港流感活躍情況，提供最新流感指標、統計數據和趨勢分析",
   keywords: ['香港', '流感', '監測', '儀表板', '健康', '統計', 'flu', 'dashboard', 'health', 'trend'],
   authors: [{ name: 'Duncan Kwan' }],
@@ -42,7 +46,6 @@ export const metadata: Metadata = {
     description: '即時監測香港流感活躍情況，提供最新流感指標、統計數據和趨勢分析。',
     images: ['https://flu-dashboard.vercel.app/twitter-image.jpg'],
   },
-  metadataBase: new URL('https://flu-dashboard.vercel.app'),
   other: {
     'google-adsense-account': 'ca-pub-8470057760537876',
   },
