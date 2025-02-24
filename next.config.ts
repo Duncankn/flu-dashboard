@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/:path*',
-        has: [{ type: 'host', value: 'https://www.flu-dashboard.vercel.app' }],
+        has: [{ type: 'header', key: 'host', value: 'www.flu-dashboard.vercel.app' }],
         destination: 'https://flu-dashboard.vercel.app/:path*',
         permanent: true, // Or 308
       },
