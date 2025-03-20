@@ -50,10 +50,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-50 p-4">
-      {/* Ad */}
-      <div>
-        <AdSense client="ca-pub-8470057760537876" slot="3111011978" />
-      </div>
       {/* Title */}
       <div className="mb-6 text-center">
         <h1 className="text-3xl font-bold text-gray-800">香港流感監測儀表板</h1>
