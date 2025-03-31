@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 //import CookieConsentBanner from "@/components/cookieConsentBanner";
